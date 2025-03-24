@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../components/ui/cars/Card";
 import { Car } from "@lib/types/types";
 import CarList from "../components/ui/cars/CarList";
 
