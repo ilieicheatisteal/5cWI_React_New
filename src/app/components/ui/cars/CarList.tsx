@@ -1,8 +1,7 @@
 import { Car } from "@lib/types/types";
-import React from "react";
 import Card from "./Card";
 
-type Props = { cars: Car[] };
+type P = { cars: Car[] };
 
 export default function CarList({ cars }: Props) {
   return (

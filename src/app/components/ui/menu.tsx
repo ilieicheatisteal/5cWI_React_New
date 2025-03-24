@@ -1,8 +1,6 @@
-import React from "react";
 import Link from "next/link";
-type Props = {};
 
-export default function Menu({}: Props) {
+export default function Menu() {
   return (
     <div>
       <ul className="flex p-4">
