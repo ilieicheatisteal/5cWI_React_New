@@ -1,7 +1,7 @@
 import { Car } from "@lib/types/types";
 import Card from "./Card";
 
-type P = { cars: Car[] };
+type Props = { cars: Car[] };
 
 export default function CarList({ cars }: Props) {
   return (
@@ -9,8 +9,7 @@ export default function CarList({ cars }: Props) {
       <h1>Cars</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {cars.map((car: Car) => (
-          <Card car={car} />
-        ))}
+          <Card key={car.name} car={car}/>))}
       </div>
     </div>
   );
